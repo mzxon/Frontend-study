@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>05_이미지.html</title>
+    </head>
+
+    <body>
+        <!--
+            ● 이미지(.jpg .png .gif) 추가
+              <img src="경로명+파일명">
+              <img src="경로명+파일명"/>
+
+            1) 상대경로
+                현재 문서가 저장되어 있는 폴더를 기준으로
+                여기서는 /frontend/html
+                images/         현재 폴더안에서 하위폴더 images
+                ./images/       현재 폴더안에서 하위폴더 images
+                ../images/      현재 폴더의 상위폴더 images
+                ../../images/   현재 폴더의 상위의 상위폴더 images
+
+            2) 절대경로
+                웹프로젝트의 홈디렉토리(root)부터 시작
+                http://itwill.com/
+        -->
+
+        <img src="../images/apeach.png">
+        <hr>
+        <br>
+        <img src="../images/appleRed.png" width="40%" height="40%">
+        <img src="../images/add.png" width="150px">
+        <!-- 크기에 대한 기준은 가로(width) -->
+        <img src="../images/appleGreen.png" width="20%" height="20%">
+        <hr>
+        <br>
+        <!-- 테두리선 -->
+        <img src="../images/angel.png" border="2px">
+    </body>
+</html>
