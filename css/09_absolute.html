@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>09_absolute.html</title>
+        <!-- 현재 페이지에서 CSS 초기화 -->
+        <link rel="stylesheet" href="reset.css">
+        <style>
+            /*
+            #s1 ul{
+                background-color: yellow; height: 300px;
+            }
+            #s1 li:nth-child(1){
+                background-color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+            #s1 li:nth-child(2){
+                background-color: blue;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+            */
+
+            /*1) <body> 본문영역이 기준 좌표
+                부모 : relative 자식 : absolute 기본*/
+            /*
+            #s1 li:nth-child(1){
+                background-color: red;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            #s1 li:nth-child(2){
+                background-color: green;
+            }
+            #s1 li:nth-child(3){
+                background-color: blue;
+            }
+            */
+
+            /* 2) 부모 영역을 기준으로 position:relative */
+            /* 부모 ul 자식 li */
+            /*
+            #s1 ul{
+                background-color: yellow;
+                position: relative;
+                height: 300px;
+            } /*부모 위치 먼저 지정*/
+            /*
+            #s1 li:nth-child(1){
+                background-color: red;
+                position: absolute;
+                --left: 0;
+                --top: 0;
+                right : 0;
+                bottom: 0;
+            }
+            #s1 li:nth-child(2){
+                background-color: green;
+                position: absolute;
+                left: 50%;
+                top:50%
+            }
+            #s1 li:nth-child(3){
+                background-color: blue;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            */
+
+            /*3)*/
+            #s1 ul{
+                background-color: yellow;
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+            #s1 li:nth-child(1){
+                background-color: red;
+                position: absolute;
+                width: 100%;
+                --left: 0;
+                --top: 0;
+                right : 0;
+                bottom: 0;
+            }
+            #s1 li:nth-child(2){
+                background-color: green;
+                left: 50%;
+                top:50%
+            }
+            #s1 li:nth-child(3){
+                background-color: blue;
+                left: 0;
+                top: 0;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <!-- 절대적 위치 : position:absolute -->
+        <section id="s1">
+            <h2>position:absolute</h2>
+            <ul>
+                <li>국어</li>
+                <li>영어</li>
+                <li>수학</li>
+            </ul>
+        </section>
+    </body>
+</html>
